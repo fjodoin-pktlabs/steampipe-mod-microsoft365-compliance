@@ -136,17 +136,17 @@ control "cis_v300_1_3_1" {
   })
 }
 
-control "cis_v300_1_3_3" {
-  title         = "1.3.3 Ensure 'External sharing' of calendars is not available"
-  description   = "External calendar sharing allows an administrator to enable the ability for users to share calendars with anyone outside of the organization. Outside users will be sent a URL that can be used to view the calendar."
-  query         = query.microsoft365_calendar_sharing_disabled
-  documentation = file("./cis_v300/docs/cis_v300_1_3_3.md")
+#control "cis_v300_1_3_3" {
+#  title         = "1.3.3 Ensure 'External sharing' of calendars is not available"
+#  description   = "External calendar sharing allows an administrator to enable the ability for users to share calendars with anyone outside of the organization. Outside users will be sent a URL that can be used to view the calendar."
+#  query         = query.microsoft365_calendar_sharing_disabled
+#  documentation = file("./cis_v300/docs/cis_v300_1_3_3.md")
 
-  tags = merge(local.cis_v300_1_3_common_tags, {
-    cis_item_id           = "1.3.3"
-    cis_level             = "2"
-    cis_type              = "automated"
-    microsoft_365_license = "E3"
-    service               = "Azure/ActiveDirectory"
-  })
-}
+ # tags = merge(local.cis_v300_1_3_common_tags, {
+ #   cis_item_id           = "1.3.3"
+ #   cis_level             = "2"
+ #   cis_type              = "automated"
+ #   microsoft_365_license = "E3"
+ #   service               = "Azure/ActiveDirectory"
+ # })
+#}

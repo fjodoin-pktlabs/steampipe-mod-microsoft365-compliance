@@ -111,8 +111,8 @@ control "cis_v300_1_2_1" {
 benchmark "cis_v300_1_3" {
   title = "1.3 Settings"
   children = [
-    control.cis_v300_1_3_1,
-    control.cis_v300_1_3_3
+    control.cis_v300_1_3_1
+    #control.cis_v300_1_3_3
   ]
 
   tags = merge(local.cis_v300_1_3_common_tags, {
